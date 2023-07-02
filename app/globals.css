@@ -14,7 +14,7 @@
   }
 }
 .fly {
-  animation: rocket 20s linear infinite;
+  animation: rocket 30s linear infinite;
 }
 
 @keyframes rocket {

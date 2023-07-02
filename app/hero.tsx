@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className='grid grid-cols-3 ring-1 ring-theme-border rounded-xl p-14'>
+    <section className='relative grid grid-cols-3 ring-1 ring-theme-border rounded-xl p-14'>
       <div className='col-span-2 text-4xl font-bold'>
         <p>Welcome to the </p>
-        <p className='mt-2 text-transparent gradient bg-clip-text'>
+        <p className='mt-2 text-transparent pointer-events-none gradient bg-clip-text'>
           Golden Rocket Dashboard
         </p>
         <p className='mt-8 text-lg font-normal leading-6'>
@@ -18,9 +18,9 @@ export default function Hero() {
       <Image
         src={'/assets/rocket.svg'}
         alt='rocket'
-        height={383}
-        width={383}
-        className='duration-1000 ease-linear fly'
+        height={330}
+        width={330}
+        className='absolute inset-0 ml-auto duration-1000 ease-linear -z-10 fly'
       />
     </section>
   );
