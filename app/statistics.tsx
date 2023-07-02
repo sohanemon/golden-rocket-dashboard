@@ -3,16 +3,18 @@ import LineChart from './lineChart';
 
 export default function Statistics() {
   return (
-    <section className='grid grid-cols-2 gap-6 mt-6'>
+    <section className='grid grid-cols-1 gap-6 mt-6 xl:grid-cols-2'>
       {data.map((_) => (
         <div
-          className='flex items-center p-5 ring-1 ring-theme-border rounded-xl'
+          className='flex items-center justify-between p-5 ring-1 ring-theme-border rounded-xl'
           key={_.title}
         >
           <div>
             <p className='text-sm text-white/60'>Statistics</p>
-            <p className='my-1 text-sm font-semibold'>{_.title}</p>
-            <p className='my-4 text-4xl font-semibold'>{_.amount}</p>
+            <p className='my-1 text-sm font-semibold '>{_.title}</p>
+            <p className='my-4 text-4xl font-semibold whitespace-nowrap'>
+              {_.amount}
+            </p>
             {_.increasing !== undefined && (
               <button
                 className={`p-2.5 rounded-lg  flex items-center gap-2 text-sm ${

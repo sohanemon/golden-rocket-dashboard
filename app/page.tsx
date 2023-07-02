@@ -4,7 +4,7 @@ import Statistics from './statistics';
 
 export default function Home() {
   return (
-    <main className='h-screen p-10 overflow-y-scroll grow'>
+    <main className='h-screen p-10 overflow-x-hidden overflow-y-scroll grow box'>
       <Actions />
       <Hero />
       <Statistics />

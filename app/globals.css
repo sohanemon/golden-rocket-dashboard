@@ -31,6 +31,9 @@
   .gradient {
     @apply transition-all bg-gradient-to-r from-theme-pink to-theme-yellow hover:from-theme-pink/80 hover:to-theme-yellow/80;
   }
+  .box {
+    @apply max-w-[1400px] mx-auto px-4;
+  }
 }
 .fly {
   animation: rocket 30s linear infinite;
