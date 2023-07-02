@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import LineChart from './lineChart';
 
 export default function Statistics() {
   return (
@@ -30,6 +31,7 @@ export default function Statistics() {
               </button>
             )}
           </div>
+          {_.chart}
         </div>
       ))}
     </section>
@@ -41,6 +43,7 @@ const data = [
     amount: '$ 342.954,56',
     trendValue: '+21.01%',
     increasing: true,
+    chart: <LineChart color='#63D2A1' />,
   },
   {
     title: 'TOTAL CIRCULATING SUPPLY',
