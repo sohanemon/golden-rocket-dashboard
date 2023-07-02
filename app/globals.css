@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  @apply bg-gradient-to-b from-theme-pink to-theme-yellow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-theme-pink/70;
+}
+
 @layer base {
   body {
     @apply tracking-wide text-white bg-theme-black border-theme-border ring-theme-border;
