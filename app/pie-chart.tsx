@@ -21,7 +21,7 @@ export default function PieChart() {
       </defs>
       <Pie
         data={data}
-        innerRadius={95}
+        innerRadius={100}
         outerRadius={120}
         fill='#282828'
         stroke='#282828'
