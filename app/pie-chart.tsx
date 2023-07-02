@@ -2,13 +2,17 @@
 import { Cell, PieChart as Chart, Pie } from 'recharts';
 
 const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
+  { name: 'Group B', value: 69 },
+  { name: 'Group A', value: 31 },
 ];
 
 export default function PieChart() {
   return (
-    <Chart width={330} height={250} style={{ transform: 'rotate(115deg)' }}>
+    <Chart
+      width={330}
+      height={250}
+      style={{ transform: 'rotate(269deg) scale(1, -1)' }}
+    >
       <defs>
         <linearGradient id='lol' x1='0' y1='0' x2='0' y2='1'>
           <stop offset='5%' stopColor='#f9b51b' stopOpacity={1} />
