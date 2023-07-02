@@ -50,6 +50,7 @@ const data = [
     amount: '342.954,56',
     trendValue: '+21.01%',
     increasing: false,
+    chart: <LineChart color='#FF718B' />,
   },
   {
     title: 'PERCENTAGE BURNT',
@@ -60,5 +61,6 @@ const data = [
     amount: '$ 342.954,56',
     trendValue: '+21.01%',
     increasing: true,
+    chart: <LineChart color='#63D2A1' />,
   },
 ];

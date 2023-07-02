@@ -1,5 +1,15 @@
 'use client';
-import { Area, AreaChart, Tooltip } from 'recharts';
+import * as React from 'react';
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  LineChart as LChart,
+  Line,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
 
 const data = [
   {
@@ -41,7 +51,7 @@ export default function LineChart({ color }: { color: string }) {
       margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
     >
       <defs>
-        <linearGradient id='value' x1='0' y1='0' x2='0' y2='1'>
+        <linearGradient id={color.slice(1)} x1='0' y1='0' x2='0' y2='1'>
           <stop offset='5%' stopColor={color} stopOpacity={0.8} />
           <stop offset='95%' stopColor={color} stopOpacity={0.1} />
         </linearGradient>
@@ -53,7 +63,7 @@ export default function LineChart({ color }: { color: string }) {
         stroke={color}
         strokeWidth={2}
         fillOpacity={1}
-        fill='url(#value)'
+        fill={`url(${color})`}
       />
     </AreaChart>
   );
