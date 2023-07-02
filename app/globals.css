@@ -10,6 +10,19 @@
 
 @layer utilities {
   .gradient {
-    @apply bg-gradient-to-r from-theme-pink to-theme-yellow;
+    @apply transition-all bg-gradient-to-r from-theme-pink to-theme-yellow hover:from-theme-pink/80 hover:to-theme-yellow/80;
+  }
+}
+.fly {
+  animation: rocket 20s linear infinite;
+}
+
+@keyframes rocket {
+  0%,
+  100% {
+    transform: translate(30px, -35px);
+  }
+  50% {
+    transform: translate(0, 0);
   }
 }
