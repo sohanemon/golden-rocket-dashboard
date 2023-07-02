@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white bg-theme-black border-theme-border ring-theme-border;
+  }
+}
+
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-r from-theme-pink to-theme-yellow;
+  }
+}

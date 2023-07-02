@@ -13,6 +13,7 @@ module.exports = {
           yellow: '#fbc218',
           teal: '#63D2A1',
           black: '#0b0b0b',
+          border: '#232323',
         },
       },
     },
