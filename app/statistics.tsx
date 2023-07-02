@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import LineChart from './lineChart';
+import PieChart from './pie-chart';
 
 export default function Statistics() {
   return (
@@ -57,6 +58,7 @@ const data = [
   {
     title: 'PERCENTAGE BURNT',
     amount: '69%',
+    chart: <PieChart />,
   },
   {
     title: 'CURRENT MARKET CAP',
