@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Sidebar() {
   return (
-    <section className='flex flex-col items-center h-screen px-6 py-10 border-r min-w-fit border-theme-border'>
+    <section className='flex flex-col items-center h-screen px-2 py-10 border-r md:px-6 min-w-fit border-theme-border'>
       <div className='flex flex-col space-y-9 grow'>
         <Link href='/'>
           <Image
