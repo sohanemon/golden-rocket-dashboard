@@ -11,9 +11,9 @@ export default function Statistics() {
           key={_.title}
         >
           <div>
-            <p className='text-sm text-white/60'>Statistics</p>
-            <p className='my-1 text-sm font-semibold '>{_.title}</p>
-            <p className='my-4 text-4xl font-semibold whitespace-nowrap'>
+            <p className='text-xs sm:text-sm text-white/60'>Statistics</p>
+            <p className='my-1 text-xs font-semibold sm:text-sm '>{_.title}</p>
+            <p className='my-4 text-2xl font-semibold md:text-4xl whitespace-nowrap'>
               {_.amount}
             </p>
             {_.increasing !== undefined && (

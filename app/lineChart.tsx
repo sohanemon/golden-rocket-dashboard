@@ -48,6 +48,7 @@ export default function LineChart({ color }: { color: string }) {
       width={330}
       height={250}
       data={data}
+      className='max-sm:scale-75'
       margin={{ top: 10, right: 30, left: 30, bottom: 0 }}
     >
       <defs>

@@ -20,7 +20,7 @@ export default function Hero() {
         alt='rocket'
         height={330}
         width={330}
-        className='absolute inset-0 ml-auto duration-1000 ease-linear -z-10 fly'
+        className='absolute inset-0 ml-auto duration-1000 ease-linear -z-10 fly max-md:brightness-40 max-md:mix-blend-lighten'
       />
     </section>
   );
