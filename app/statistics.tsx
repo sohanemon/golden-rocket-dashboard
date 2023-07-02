@@ -7,7 +7,7 @@ export default function Statistics() {
     <section className='grid grid-cols-1 gap-6 mt-6 xl:grid-cols-2'>
       {data.map((_) => (
         <div
-          className='flex flex-col items-center justify-between p-5 md:flex-row ring-1 ring-theme-border rounded-xl'
+          className='flex flex-col items-center justify-between p-5 max-md:pt-10 md:flex-row ring-1 ring-theme-border rounded-xl'
           key={_.title}
         >
           <div>
