@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className='relative grid grid-cols-3 ring-1 ring-theme-border rounded-xl p-14'>
-      <div className='col-span-2 text-4xl font-bold'>
+    <section className='relative grid grid-cols-3 p-3 ring-1 ring-theme-border rounded-xl lg:p-14'>
+      <div className='text-4xl font-bold lg:col-span-2 col-span-full'>
         <p>Welcome to the </p>
         <p className='mt-2 text-transparent pointer-events-none gradient bg-clip-text'>
           Golden Rocket Dashboard
